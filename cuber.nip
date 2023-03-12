@@ -1,0 +1,57 @@
+//Pickit by jacobh91
+//Custom Pickit for Auto "Using Cube"
+
+
+[name] == perfectamethyst
+[name] == perfecttopaz
+[name] == perfectdiamond
+[name] == perfectsapphire
+[name] == perfectruby
+[name] == perfectemerald
+[name] == perfectskull
+
+// --Grand Charms--
+[name] == grandcharm && [quality] == magic # ([coldresist]+[lightresist] == 30 || [maxdamage] >= 10) && ([maxhp] >= 30 || [strength] >= 6 || [dexterity] >= 6 || [fhr] >= 12 || [frw] == 7)
+[name] == grandcharm && [quality] == magic # [maxdamage] >= 10 && [tohit] >= 100 && ([maxhp] >= 30 || [strength] >= 6 || [dexterity] >= 6 || [fhr] >= 12 || [frw] == 7)
+[name] == grandcharm && [quality] == magic # [tohit] >= 100 && [maxhp] >= 40
+[name] == grandcharm && [quality] == magic # [itemgoldbonus] == 40 && ([tohit] >= 100 || [warcriesskilltab] == 1 || [maxdamage] == 10 || [maxmana] >= 55 || [fireresist]+[coldresist] == 30)
+[name] == grandcharm && [quality] == magic # [maxmana] >= 59 && ([maxhp] >= 40 || [fhr] == 12 || [itemgoldbonus] == 40)
+
+//Druid
+[name] == grandcharm && [quality] == magic # [elementalskilltab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [shapeshiftingskilltab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [DruidSummoningSkillTab] == 1 && [maxhp] >= 45
+//Paladin
+[name] == grandcharm && [quality] == magic # [palicombatskilltab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [offensiveaurasskilltab] == 1 && [maxhp] >= 40
+[name] == grandcharm && [quality] == magic # [defensiveaurasskilltab] == 1 && [maxhp] >= 40
+//Sorceress
+[name] == grandcharm && [quality] == magic # [lightningskilltab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [coldskilltab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [fireskilltab] == 1 && [maxhp] >= 30
+//Amazon
+[name] == grandcharm && [quality] == magic # [javelinandspearskilltab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [bowandcrossbowskilltab] == 1 && [maxhp] >= 40
+[name] == grandcharm && [quality] == magic # [passiveandmagicskilltab] == 1 && [maxhp] >= 40
+//Assassin
+[name] == grandcharm && [quality] == magic # [trapsskilltab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [ShadowDisciplinesSkillTab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [MartialArtsSkillTab] == 1 && [maxhp] >= 30
+//Barbarian
+[name] == grandcharm && [quality] == magic # [warcriesskilltab] == 1 && [maxhp] >= 40
+[name] == grandcharm && [quality] == magic # [BarbCombatSkillTab] == 1 && [maxhp] >= 40
+[name] == grandcharm && [quality] == magic # [MasteriesSkillTab] == 1 && [maxhp] >= 40
+//Necromancer
+[name] == grandcharm && [quality] == magic # [poisonandboneskilltab] == 1 && [maxhp] >= 30
+[name] == grandcharm && [quality] == magic # [NecromancerSummoningSkillTab] == 1 && [maxhp] >= 40
+[name] == grandcharm && [quality] == magic # [CursesSkillTab] == 1 && [maxhp] >= 45
+
+//Circlets (Pskull Reroll)
+[type] == circlet && [quality] == rare # [necromancerskills]+[druidskills]+[paladinskills]+[sorceressskills]+[assassinskills] == 2 && [fcr] == 20 && ([frw] == 30 || [sockets] == 2)
+[type] == circlet && [quality] == rare # [sorceressskills]+[necromancerskills]+[paladinskills]+[assassinskills] == 2 && [fcr] == 20 && ([maxhp] >= 20 || [maxmana] >= 50) && ([strength]+[dexterity] >= 10 || [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32 || [sockets] == 2)
+[type] == circlet && [quality] == rare # [sorceressskills]+[necromancerskills]+[paladinskills]+[assassinskills] == 2 && [fcr] == 20 && ([maxhp] >= 20 || [maxmana] >= 50 || [strength]+[dexterity] >= 10 || [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32 || [sockets] == 2) && ([strength]+[dexterity] >= 10 || [fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 32 || [sockets] == 2 || [maxhp] >= 20 || [maxmana] >= 50)
+[type] == circlet && [quality] == rare # [amazonskills] == 2 && [frw] == 30 && ([strength]+[dexterity] >= 15 || [sockets] == 2 || [maxhp]+[maxmana] >= 30)
+[type] == circlet && [quality] == rare # [druidskills] == 2 && [itemtohitpercentperlevel] >= 1 && [frw] == 30 && ([strength]+[dexterity] >= 10 || [maxhp]+[maxmana] >= 20)
+[type] == circlet && [quality] == rare # [paladinskills] == 2 && [itemtohitpercentperlevel] >= 1 && [strength]+[dexterity] >= 15 && ([sockets] == 2 || [maxhp] >= 30)
+[type] == circlet && [quality] == rare # [barbarianskills] == 2 && [fcr] == 20 && ([strength]+[dexterity] >= 15 || [maxhp]+[maxmana] >= 30) && ([fireresist]+[lightresist]+[coldresist]+[poisonresist] >= 60 || [sockets] == 2)
+[type] == circlet && [quality] == rare # ([barbarianskills] == 2 && [itemgoldbonus] >= 70 && [sockets] == 2) || ([barbarianskills] == 2 && [itemgoldbonus] >= 70 && ([strength] >= 15 || [maxhp] >= 25) && [sockets] >= 1)
